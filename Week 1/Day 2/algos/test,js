@@ -1,0 +1,5 @@
+var x='wow';
+var y='it worked';
+
+const str= x +''+ y
+console.log(str)
