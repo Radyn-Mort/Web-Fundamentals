@@ -1,0 +1,35 @@
+.search{
+margin: 10px;
+text-align: center;
+border: 1px solid cyan;
+border-radius: 10px;
+width: 150px;
+height: 25px;
+background-color: white;
+color: cyan;
+font-size: 20px;
+}
+
+.add{
+    
+    border: 1px solid cyan;
+    background-color: cyan;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: white;
+    margin: 10px;
+
+}
+
+.create{
+    margin: 10px;
+    height: 40px;
+    width: 200px;
+    background-color: royalblue;
+    border: 1px solid black;
+    color: white;
+    font-size: 20px;
+    box-shadow: 5px 5px black;
+}
