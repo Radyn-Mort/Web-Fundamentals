@@ -1,0 +1,23 @@
+img{
+    height: 200px;
+    
+
+}
+
+div{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+.row1{
+background-color: red;
+}
+
+.row2{
+background-color: yellow;
+
+}
+
+.row3{
+background-color: blue;
+}
