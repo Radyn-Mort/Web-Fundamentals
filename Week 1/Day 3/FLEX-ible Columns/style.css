@@ -1,0 +1,27 @@
+*{
+    color: white;
+    font-family: cursive;
+}
+.row{
+    display: flex;
+    height: 60px;
+}
+.row div{
+    background-color: aqua;
+    margin: 10px;
+}
+.col,.col-2,.col-3{
+    text-align: center;
+    padding: 10px;
+}
+.col{
+    
+    flex: 1;
+}
+.col-2{
+    
+    flex:2;
+}
+.col-3{
+    flex: 3;
+}
