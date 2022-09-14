@@ -1,26 +1,35 @@
+@font-face {
+    font-family: roboto;
+    src: url(./Roboto/Roboto-Black.ttf);
+}
+/* introduces font */
 *{
     font-family: roboto;
     color: white;
     text-decoration: none;
 }
+/* sets font color,family,and removes text dec */
 
 div {
     display: flex;
     background-color: rgb(46, 44, 44);
-    justify-content: flex-end;
+    justify-content: space-between;
     border: 1px solid wheat;
     gap: 5px;
     flex-direction: row;
 }
+/* set nav */
 
 ul {
     display: flex;
 }
+/* makes ul display li side by side */
 li{
     list-style: none;
-    margin: 5px;
+    margin: 10px;
     
 }
+/* removes list stiles and sets margin for li */
 
 .btn{
     background-color: rgb(0, 225, 255);
@@ -28,20 +37,24 @@ li{
     box-shadow: 5px 5px black;
     margin: 5px;    
 }
+/* desing for btn class */
 
 .btn:hover{
     cursor: pointer;
     background-color: aqua;
 }
+/* what happens what btn is hovered */
 
 li a:hover{
     color: rgb(138, 58, 58);
     cursor: pointer;
 }
+/* what happens when li is hovered */
 
 h1{
-    margin-left: 15px;
-    flex: 1;
+    margin-left: 20px;
+    /* flex: 1; */
+    /* flex: overries jsutify content */
     /* why does this work?/ why does this bring it to the front? */
 
 }
