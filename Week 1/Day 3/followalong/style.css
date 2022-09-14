@@ -1,0 +1,53 @@
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.social{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+li {
+    list-style: none;
+    
+}
+.product{
+    flex: 1;
+    border: 1px solid grey;
+    margin: 5px 10px;
+    padding: 10px;
+}
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: grey;
+    padding: 10px;
+    color: white;
+}
+.menu li{
+    margin-right: 10px;
+}
+header{
+    display: flex;
+}
+.logo >img{
+    height: 70px;
+    
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.tittle{
+    flex: 2;
+}
+
+/* 
+flex-direction  set to row
+space-between
+flex targets child elements works as a preportion
+*/
