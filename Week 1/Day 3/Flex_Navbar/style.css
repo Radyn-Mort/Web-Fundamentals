@@ -1,5 +1,5 @@
 *{
-    font-family: cursive;
+    font-family: roboto;
     color: white;
     text-decoration: none;
 }
@@ -38,6 +38,6 @@ li a:hover{
 }
 
 h1{
-margin: 10px 1300px 10px 20px;
+margin: 10px 70% 10px 20px;
 /* better way? to get h1 to the left*/
 }
