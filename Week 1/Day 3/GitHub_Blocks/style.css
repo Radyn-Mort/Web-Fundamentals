@@ -3,6 +3,9 @@ img{
     
 
 }
+html{
+    background-color: rgb(185, 184, 184);
+}
 
 div{
     display: flex;
@@ -20,4 +23,21 @@ background-color: yellow;
 
 .row3{
 background-color: blue;
+}
+
+h1{
+    text-align: center;
+    color:rgb(99, 99, 143);
+
+}
+
+footer{
+text-align: center;
+color: antiquewhite;
+font-size: 25px;
+}
+
+footer>a{
+color: aqua;
+
 }
