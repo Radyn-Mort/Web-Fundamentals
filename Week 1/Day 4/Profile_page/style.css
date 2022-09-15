@@ -7,6 +7,7 @@
 body{
     background-color: #F5E9E2
 }
+
 /* title content below */
 .title{
     background-color: #e3b5a4;
@@ -27,7 +28,6 @@ body{
     padding: 5px;
     
 }
-
 
 /* main */
 main{
@@ -50,6 +50,7 @@ main>*{
 .collumn-1>*,.collumn-2>*{
     margin: 10px;
 }
+
 /* sizing for boxes */
 .card-info,.edu{
     display: flex;
