@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+body{
+
+
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* why isnt this centering? How can i make it center */
+.info-card{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 7px ;
+    }
+
+.header{
+    background-color: aqua;
+    flex:1;
+    padding: 0px 45px;
+    }
+
+
+.card-body{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.head{
+    height: 100px;
+    position: relative;
+    top: 50px;
+}
+.pin{
+    height: 25px;
+}
+.gear{
+    height: 25px;
+}
+
+h1,h3,p,p>a>img{
+    padding: 0 10px;
+}
