@@ -123,6 +123,7 @@ main>*{
     display: flex;
     margin: 5px;
     text-decoration: none;
+    color: black;
 }
 .prof{
     height: 70px;
@@ -160,6 +161,16 @@ main>*{
     width: 100px;
     box-shadow: 5px 5px;
     }
+.signOut:hover{
+    background-color:#7286A0;
+    cursor: pointer;
+}
+.titleLinks>li>a:hover{
+    color: #7286A0;
+}
+.hGear:hover{
+    color:#D44D5C;
+}
 
 
 /*
