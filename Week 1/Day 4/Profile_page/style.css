@@ -62,22 +62,18 @@ main>*{
     left: 30%;
 }
 .requests{
-    height: 300px;
+    /* height: 300px; */
     width: 250px;
     position: absolute;
     left: 60%;
     top: 150px;
-    overflow: hidden;
 }
 .connections{
-    height: 300px;
+    /* height: 300px; */
     width: 250px;
     position: absolute;
     left: 60%;
     top: 500px;
-    overflow: hidden;
-
-
 }
 /* desing elements eblow */
 .header{
