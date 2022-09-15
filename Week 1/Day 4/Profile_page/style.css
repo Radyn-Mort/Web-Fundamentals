@@ -176,7 +176,26 @@ h4{
     display: flex;
     align-items: center;
 }
+.accept,.deny{
+    height: 15px;
+    overflow: auto;
+}
+.denyBtn,.acceptBtn{
+    height: 20px;
+    width: 20px;
+    border: hidden;
+    border-radius: 50%;
+}
+.denyBtn:hover{
+    background-color: #773344;
+    cursor: pointer;
 
+}
+.acceptBtn:hover{
+    background-color: green;
+    cursor: pointer;
+
+}
 /*
     How to get Names even with pics
  */
