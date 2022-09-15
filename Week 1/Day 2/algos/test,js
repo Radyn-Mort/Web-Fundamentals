@@ -1,11 +1,33 @@
-var countPositives = 0;
-var numbers = [3, 4, -2, 7, 16, -8, 0];
-    for( var i=0;i<numbers.length; i++){
-        if(numbers[i]>=0){
-            countPositives += 1;
-
-        }
-    }
-// your code here!
+var x = 5;
     
-console.log("there are " + countPositives + " positive values");
+function setX(newValue) {
+    x = newValue; 
+}
+    
+console.log(x);
+setX(15);
+console.log(x);
+// var | Val
+// x   | 5,15
+
+//consol |5,15
+
+var x = 5;
+    
+function addToX(amount) {
+    return x + amount;
+    console.log("hello there");
+}
+    
+console.log(x);
+var result = addToX(-10);
+console.log(result);
+console.log(x);
+
+//var   | Val
+//x     |5
+//amount|-10
+//result|-5
+
+//console|5,-5,5
+
