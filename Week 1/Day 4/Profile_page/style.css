@@ -35,12 +35,14 @@ main{
     border: 1px solid black;
     /* display: flex;
     justify-content: space-between; */
+    overflow: wrap;
 
 }
 main>*{
     margin: 10px;
 }
-
+/* get over flow working so my boxes stack on small screens ??
+*/
 /* postions and sizing for boxes */
 .card-info{
     display: flex;
@@ -49,7 +51,7 @@ main>*{
     height: 300px;
     position: relative;
     top: 100px;
-    left: 100px;
+    left: 30%;
 }
 .edu{
     width: 500px;
@@ -57,22 +59,23 @@ main>*{
     top: 600px;
     position: absolute;
     top: 500px;
-    left: 100px;
+    left: 30%;
 }
 .requests{
     height: 300px;
     width: 250px;
     position: absolute;
-    left: 700px;
+    left: 60%;
     top: 150px;
+    overflow: hidden;
 }
 .connections{
     height: 300px;
     width: 250px;
     position: absolute;
-    left: 700px;
+    left: 60%;
     top: 500px;
-
+    overflow: hidden;
 
 
 }
@@ -82,6 +85,13 @@ main>*{
     border-bottom: 5px dotted #7286A0;
     border-radius: inherit;
     
+}.header-2{
+    background-color: #773344;
+    padding: 25px;
+    border-bottom: 6px dotted #7286A0;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
 }
 .card-info,.edu,.requests,.connections{
     border: 3px solid black;
@@ -91,22 +101,17 @@ main>*{
 .card-body{
     overflow: scroll;
     overflow-x: hidden;
-    height: 50%;
+    height: 200px;
 }
+/* overflow better? */
 .card-body>*,.card-body-2>*{
     margin: 5px 0 0 20px;
     
 }
-.header-2{
-    background-color: #773344;
-    padding: 25px;
-    border-bottom: 6px dotted #7286A0;
-    border-radius: inherit;
-    display: flex;
-    /* position: fixed; how to fix it with the box*/
-}
+
 .header-2>*{
     margin-left: 5px;
+
 }
 /* image/buttons*/
 .head{
@@ -171,7 +176,10 @@ main>*{
 .hGear:hover{
     color:#D44D5C;
 }
-
+h4{
+    display: flex;
+    align-items: center;
+}
 
 /*
     How to get Names even with pics
