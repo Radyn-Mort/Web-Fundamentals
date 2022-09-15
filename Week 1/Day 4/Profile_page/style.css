@@ -31,51 +31,37 @@ body{
 
 /* main */
 main{
-    height:2000px;
-    border: 1px solid black;
-    /* display: flex;
-    justify-content: space-between; */
-    overflow: wrap;
-
+    display: flex;
+    justify-content: center;
 }
 main>*{
     margin: 10px;
 }
-/* get over flow working so my boxes stack on small screens ??
-*/
-/* postions and sizing for boxes */
-.card-info{
+.collumn-1,.collumn-2{
+    width: 49%;
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 300px;
-    position: relative;
-    top: 100px;
-    left: 30%;
+    justify-content: center;
+    align-items: flex-start;
 }
-.edu{
-    width: 500px;
-    height: 200px;
-    top: 600px;
-    position: absolute;
-    top: 500px;
-    left: 30%;
+.collumn-1{
+    align-items: flex-end;
 }
-.requests{
-    /* height: 300px; */
-    width: 250px;
-    position: absolute;
-    left: 60%;
-    top: 150px;
+.collumn-1>*,.collumn-2>*{
+    margin: 10px;
 }
-.connections{
-    /* height: 300px; */
-    width: 250px;
-    position: absolute;
-    left: 60%;
-    top: 500px;
+/* sizing for boxes */
+.card-info,.edu{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
 }
-/* desing elements eblow */
+.requests,.connections{
+    /* width: 250px; */
+    width: 50%;
+}
+
+/* designing elements eblow */
 .header{
     background-color:#D44D5C ;
     border-bottom: 5px dotted #7286A0;
@@ -196,6 +182,3 @@ h4{
     cursor: pointer;
 
 }
-/*
-    How to get Names even with pics
- */
