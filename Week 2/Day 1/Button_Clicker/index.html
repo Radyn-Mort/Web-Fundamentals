@@ -8,8 +8,55 @@
     <title>Document</title>
 </head>
 <body>
-    
-    
+    <header>
+        <div class="navbar">
+            <h1>
+                Dojonary
+            </h1>
+            <input type="text" placeholder="search" class="search" >
+            <button type="button" class="login" onclick="logOut(this)">
+                Login
+            </button>
+        </div>
+    </header>
+    <div class="outer">
+        <div class="container-1">
+            <div class="card">
+                <div class="leftField">
+                    <h2>Ninja</h2>
+                    <h3> Noun</h3>
+                    <h4> Plural: ninjas </h4>
+                    <button type="button" onclick="liked(this)" class="likes">
+                        likes
+                    </button> 
+                </div>
+                <div class="rightField">
+                    <p>A Practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="leftField">
+                    <h2>Ninja</h2>
+                    <h3> Noun</h3>
+                    <h4> Plural: ninjas </h4>
+                    <button type="button" class="likes" onclick="liked(this)">
+                    likes</button>
+                </div>
+                <div class="rightField">
+                    <p>A <a href="#">programer</a> who breaks down problems with a <a href="#">Zen</a>-like focus</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-2">
+            <div class="card-2">
+                <h2>Dojonary is defined by <strong>YOU</strong></h2>
+                <button type="button"  class="def" onclick="disapear(this)" id="def">
+                    Add Definition
+                </button>
+            </div>
+        </div>
+
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
