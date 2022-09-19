@@ -46,8 +46,10 @@ var lifesAnswers = [
     "Very doubtful."
 ];
 function oracle(){
-    var x = Math.floor(Math.random()*lifesAnswers.length+1);
+    var x = Math.floor(Math.random()*lifesAnswers.length);
     console.log(lifesAnswers[x])
 
 }
-oracle()
+for(i=1;i<50;i++){
+    oracle()
+}
