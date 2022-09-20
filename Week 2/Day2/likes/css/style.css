@@ -1,0 +1,24 @@
+.box{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 50% 10px 10%;
+}
+.top{
+    display:flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    align-items: center;
+}
+.top>*{
+    flex: 4;
+}
+.likeBtn{
+    background-color: yellow;
+    flex:1;
+    box-shadow: 2px 2px;
+}
+.box > p{
+    text-align: center;
+}

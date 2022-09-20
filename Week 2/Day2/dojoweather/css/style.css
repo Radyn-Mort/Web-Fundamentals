@@ -85,3 +85,6 @@ nav{
 .cookieJar p{
     flex: 4;
 }
+.min::after,.max::after{
+    
+}

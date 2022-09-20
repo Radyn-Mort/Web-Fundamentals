@@ -2,11 +2,18 @@ function loading(element){
     alert("Loading weather report...")
 }
 
-function tempType(){
-    let min = document.getElementsByClassName(".min")
-    let max = document.querySelector(".max") 
-    console.log(min)
-    //call all mins and max then edit there content by mutiplying a var
+function tempType(element){
+    let allTemps = document.querySelectorAll('.min,.max')
+    if(element.value==='fa'){
+        for(let i =0; i<allTemps;i++){
+            let currentTemp = Math.round(Number(allTemps[i].textContent)* 1.8+32)
+            console.log(currentTemp)
+        }
+    }
+    if(element.value==='ce'){
+
+    }
+    allTemps[i].textContent = currentTemp;
 }
 
 function acceptCookies(){
