@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+nav{
+    background-color: aqua;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+.cityNav{
+    display: flex;
+    gap: 50px;
+}
+.city{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+    padding: 20px 0;
+    margin: 0 10%;
+}
+.cityNav h3:hover{
+    color: gray;
+    cursor: pointer;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+}
+.daysOfWeak{
+    display: flex;
+    gap: 20px;
+    padding: 25px 0;
+
+}
+.day{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(201, 201, 201);
+    padding: 25px;
+    height: 400px;
+    flex: 1;
+}
+.day img{
+    border-radius: 50%;
+    width: 50%;
+}
+.minMax{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+.min{
+    color: blue;
+}
+.max{
+    color: red;
+}
+.cookieJar{
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10%;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    background-color: rgb(194, 192, 192);
+    gap: 5px;
+    /* left: 400px; */
+    /* align-self: center; */ 
+}
+.cookieImg, .cookieAccept{
+    flex: 1;
+}
+.cookieImg{
+    width: 80%;
+}
+.cookieJar p{
+    flex: 4;
+}
