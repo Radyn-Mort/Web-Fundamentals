@@ -7,11 +7,9 @@ function changeTemperature( element ){
     
     for( let i = 0; i < allDegrees.length; i ++ ){
         let currentNum;
-        console.log(element.value)
         if( element.value === "far" ){
             
             currentNum = Math.round( Number(allDegrees[i].textContent) * 1.8 + 32 );
-            console.log(currentNum)
         }
         else{
             currentNum = Math.round( (Number(allDegrees[i].textContent) - 32) * .5556 );
