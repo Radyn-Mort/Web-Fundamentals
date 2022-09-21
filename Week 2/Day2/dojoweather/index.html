@@ -28,13 +28,13 @@
     </nav>
     <div class="city">
         <h2>San Jose</h2>
-        <div class="tempSel" onchange="tempType(this)">
+        <div class="tempSel">
         <span>show temperature in</span>
-        <select>
-            <option value="ce">
+        <select onchange="changeTemperature(this)">
+            <option value = "ce">
                 C*
             </option>
-            <option value="fa">
+            <option value = "far">
                 F*
             </option>
         </select>
