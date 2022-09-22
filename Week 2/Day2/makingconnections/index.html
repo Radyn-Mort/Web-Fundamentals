@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <script href="./js/script.js"></script>
+    <script src="./js/script.js"></script>
     <title>Document</title>
 </head>
 
@@ -39,7 +39,7 @@
                     <p>Developer | Engineer |Problem Solver<br>
                         Master of the shadows and the Internet!</p>
                     <p class="hGear">
-                        <a href="#" class="hGear"> <img src="./icons/gear.png" alt="gear icon" class="gear">edit profile</a>
+                        <a href="#" class="hGear" onclick="rename()"> <img src="./icons/gear.png" alt="gear icon" class="gear">edit profile</a>
                     </p>
                 </div>
             </div>
@@ -60,7 +60,9 @@
         <!-- request card -->
             <div class="requests">
                 <h2 class="header-2">
-                    <input type="button" class="circle" value="4">
+                    <div  class="circle" > 
+                        6
+                    </div>
                     Connection Requests
                 </h2>
                 <div class="card-body">
@@ -68,60 +70,60 @@
                         <img src="./images/todd-s.jpg" class="prof" alt="Pic of Joe">
                         Joe Shmoe
                         <!-- add div here and all buttons for better layout  -->
-                        <button class="acceptBtn" type="button">
-                            <img src="./icons/accept-circle.png" class="accept" alt="accept">
+                        <button class="acceptBtn" type="button" onclick="add()">
+                            <img src="./icons/accept-circle.png" class="accept" alt="accept" >
                         </button>
-                        <button class="denyBtn" type="button">
-                            <img src="./icons/close-circle.png" class="deny" alt="deny icon">
+                        <button class="denyBtn" type="button" onclick="deny()">
+                            <img src="./icons/close-circle.png" class="deny" alt="deny icon" >
                         </button>
                     </h4>
                     <h4 class="name">
                         <img src="./images/alayne-s.jpg" class="prof" alt="Pic of Jan">
                         Jane Shmane
-                        <button class="acceptBtn" type="button">
+                        <button class="acceptBtn" type="button" onclick="add()">
                             <img src="./icons/accept-circle.png" class="accept" alt="accept">
                         </button>
-                        <button class="denyBtn" type="button">
+                        <button class="denyBtn" type="button" onclick="deny()">
                             <img src="./icons/close-circle.png" class="deny" alt="deny icon">
                     </button>
                     </h4>
                     <h4 class="name">
                         <img src="./images/adrien-s.jpg" class="prof" alt="Pic of Greg">
                         Greg Smeg
-                        <button class="acceptBtn" type="button">
+                        <button class="acceptBtn" type="button" onclick="add()">
                             <img src="./icons/accept-circle.png" class="accept" alt="accept">
                         </button>
-                        <button class="denyBtn" type="button">
+                        <button class="denyBtn" type="button" onclick="deny()">
                             <img src="./icons/close-circle.png" class="deny" alt="deny icon">
                     </button>
                     </h4>
                     <h4 class="name">
                         <img src="./images/anne-s.jpg" class="prof" alt="Pic of Jen">
                         Jen Smen
-                        <button class="acceptBtn" type="button">
+                        <button class="acceptBtn" type="button" onclick="add()">
                             <img src="./icons/accept-circle.png" class="accept" alt="accept">
                         </button>
-                        <button class="denyBtn" type="button">
+                        <button class="denyBtn" type="button" onclick="deny()">
                             <img src="./icons/close-circle.png" class="deny" alt="deny icon">
                     </button>
                     </h4>
                     <h4 class="name">
                         <img src="./images/adrien-s.jpg" class="prof" alt="Pic of Greg">
                         Greg Smeg
-                        <button class="acceptBtn" type="button">
+                        <button class="acceptBtn" type="button" onclick="add()">
                             <img src="./icons/accept-circle.png" class="accept" alt="accept">
                         </button>
-                        <button class="denyBtn" type="button">
+                        <button class="denyBtn" type="button" onclick="deny()">
                             <img src="./icons/close-circle.png" class="deny" alt="deny icon">
                     </button>
                     </h4>
                     <h4 class="name">
                         <img src="./images/anne-s.jpg" class="prof" alt="Pic of Jen">
                         Jen Smen
-                        <button class="acceptBtn" type="button">
+                        <button class="acceptBtn" type="button" onclick="add()">
                             <img src="./icons/accept-circle.png" class="accept" alt="accept">
                         </button>
-                        <button class="denyBtn" type="button">
+                        <button class="denyBtn" type="button" onclick="deny()">
                             <img src="./icons/close-circle.png" class="deny" alt="deny icon">
                     </button>
                     </h4>
@@ -130,7 +132,9 @@
         <!-- conection card -->
         <div class="connections">
             <h2 class="header-2">
-                <input type="button" class="oval" value="550+">
+                <div class="oval">
+                    7
+                </div>
                 Connections
             </h2>
             <div class="card-body">
