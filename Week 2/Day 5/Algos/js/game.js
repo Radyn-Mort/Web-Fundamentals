@@ -1,0 +1,69 @@
+var theDojo = [];
+var dojoDiv = document.querySelector("#the-dojo");
+    
+// Creates the rows of buttons for this game
+function render(theDojo) {
+    var result = "";
+    for(var i=0; i<theDojo.length; i++) {
+    for(var j=0; j<theDojo[i].length; j++) {
+        result += `<button class="tatami" onclick="howMany(${i}, ${j}, this)"></button>`;
+        }
+    }
+    return result;
+}
+    
+// TODO - Make this function tell us how many ninjas are hiding 
+//        under the adjacent (all sides and corners) squares.
+//        Use i and j as the indexes to check theDojo.
+function howMany(i, j, element) {
+    let sum = 0;
+    for(let y= -1;y<2;y++){
+        for(let x = -1;x<2;x++){
+            let tempY= i+y
+            let tempX = j+x
+            if(0<=tempX && tempX<theDojo[i].length && 0<=tempY && tempY<theDojo.length){
+                sum += theDojo[tempY][tempX];
+            }
+        }
+    }
+    sum -= theDojo[i][j];
+    console.log({i, j});
+    element.innerText = sum;
+}
+function drawMap(){
+    let k=0;
+    for(let i = 0;i<10;i++){
+        theDojo.push([])
+        for(let j = 0; j<10; j++){
+
+            if(Math.floor(Math.random()*2)===1 && k<=10){
+                theDojo[i].push(Math.floor(Math.random()*2))
+                k += theDojo[i][j];
+            }
+
+            else{
+                theDojo[i].push(0)
+            }
+
+        }
+        
+    }
+}
+drawMap();
+    
+// BONUS CHALLENGES
+// 1. draw the number onto the button instead of alerting it
+// 2. at the start randomly place 10 ninjas into theDojo with at most 1 on each spot
+// 3. if you click on a ninja you must restart the game 
+//    dojoDiv.innerHTML = `<button onclick="location.reload()">restart</button>`;
+    
+// start the game
+// message to greet a user of the game
+var style="color:cyan;font-size:1.5rem;font-weight:bold;";
+console.log("%c" + "IF YOU ARE A DOJO STUDENT...", style);
+console.log("%c" + "GOOD LUCK THIS IS A CHALLENGE!", style);
+// shows the dojo for debugging purposes
+console.table(theDojo);
+// adds the rows of buttons into <div id="the-dojo"></div> 
+dojoDiv.innerHTML = render(theDojo);    
+
